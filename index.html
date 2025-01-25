@@ -5,19 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gillian & James</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js" integrity="sha512-FkM4ZGExuYz4rILLbNzw8f3HxTN9EKdXrQYcYfdluxJBjRLthYPxxZixV/787qjN3JLs2607yN5XknR/cQMU8w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         h1 {
             padding-top: 30px;
             text-align: center;
+            color: #cb7575;
+            font-family: 'Amatic SC', cursive;
+            font-weight: bold;
+            font-size: 70px;
         }
 
         h2 {
-            margin-top: 100px;
-            text-align: center;
+            font-size: 48px;
+            color: #f1c522;
+            font-family: 'Amatic SC', cursive;
+            font-weight: bold;
         }
 
-        table {
+        h3 {
+            font-size: 36px;
+            font-family: 'Amatic SC', cursive;
+        }
+
+        a {
+            color: black;
+        }
+
+        p {
+            color: #717275;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+        }
+
+
+        .section-title-wrap {
+            text-align: center;
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+        }
+
+        .section-title-line {
+            background: #e9eaeb;
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+            height: 2px;
+            margin: 0 auto;
+        }
+
+        .section-title-icon {
+            color: #ff5500;
+            font-size: 24px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 10px;
+            margin-left: 10px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        table#program {
+            color: #717275;
             margin: 0 auto;
         }
 
@@ -58,7 +110,7 @@
 <div class="container">
 
     <h1>Gillian & James's Wedding</h1>
-    <h2 id="countdown">&nbsp;</h2>
+    <p id="countdown">&nbsp;</p>
 
     <script>
         const start = Date.now();
@@ -69,8 +121,17 @@
     </script>
 
     <!---->
-    <h2>Program</h2>
-    <table>
+    <div class="section-title-wrap mb-3 mt-5">
+        <h2 class="section-title"><i class="bi-clock me-1"></i> Program</h2>
+
+        <div class="section-title-bottom">
+            <span class="section-title-line"></span>
+            <i class="section-title-icon bi-heart-fill"></i>
+            <span class="section-title-line"></span>
+        </div>
+    </div>
+
+    <table id="program">
         <tr>
             <td>Arrivals</td>
             <td>1:30-2:00</td>
@@ -98,7 +159,16 @@
     </table>
 
     <!---->
-    <h2>Venue</h2>
+    <div class="section-title-wrap mb-3 mt-5">
+        <h2 class="section-title"><i class="bi-geo-alt me-1"></i> Venue</h2>
+
+        <div class="section-title-bottom">
+            <span class="section-title-line"></span>
+            <i class="section-title-icon bi-heart-fill"></i>
+            <span class="section-title-line"></span>
+        </div>
+    </div>
+
     <p class="text-center">Burley Manor, 1 Ringwood Rd, Burley, Ringwood BH24 4BS, United Kingdom</p>
     <p class="text-center"><a href="https://www.google.com/maps?saddr=My+Location&daddr=Burley+Manor,+BH244BS">Directions</a></p>
 
@@ -110,7 +180,16 @@
     </div>
 
     <!---->
-    <h2>Hotels</h2>
+    <div class="section-title-wrap mb-3 mt-5">
+        <h2 class="section-title"><i class="bi bi-house"></i> Hotels</h2>
+
+        <div class="section-title-bottom">
+            <span class="section-title-line"></span>
+            <i class="section-title-icon bi-heart-fill"></i>
+            <span class="section-title-line"></span>
+        </div>
+    </div>
+
     <p class="text-center">While there may be accommodation available at Burley Manor the following options are also available:</p>
 
     <div class="row row-cols-auto" id="hotels">
@@ -152,10 +231,17 @@
         </div>
     </div>
 
-    <h3>Transport</h3>
-
     <!---->
-    <h2>FAQs</h2>
+    <div class="section-title-wrap mb-3 mt-5">
+        <h2 class="section-title"><i class="bi bi-patch-question"></i> FAQs</h2>
+
+        <div class="section-title-bottom">
+            <span class="section-title-line"></span>
+            <i class="section-title-icon bi-heart-fill"></i>
+            <span class="section-title-line"></span>
+        </div>
+    </div>
+
     <h3 class="text-center">Where is the ceremony and reception taking place?</h3>
     <p class="text-center">Both will be taking place at Burley Manor in the New Forest</p>
 
@@ -197,11 +283,29 @@
         evening reception.</p>
 
     <!---->
-    <h2 class="text-center">Contact</h2>
+    <div class="section-title-wrap mb-3 mt-5">
+        <h2 class="section-title"><i class="bi bi-envelope"></i> Contact</h2>
+
+        <div class="section-title-bottom">
+            <span class="section-title-line"></span>
+            <i class="section-title-icon bi-heart-fill"></i>
+            <span class="section-title-line"></span>
+        </div>
+    </div>
+
     <p class="text-center"><a href="mailto:jimeagle@gmail.com">jimeagle@gmail.com</a>, <a href="mailto:gillian_mckinley@hotmail.co.uk">gillian_mckinley@hotmail.co.uk</a></p>
 
     <!---->
-    <h2>RSVP</h2>
+    <div class="section-title-wrap mb-3 mt-5">
+        <h2 class="section-title"><i class="bi bi-hand-thumbs-up"></i> RSVP</h2>
+
+        <div class="section-title-bottom">
+            <span class="section-title-line"></span>
+            <i class="section-title-icon bi-heart-fill"></i>
+            <span class="section-title-line"></span>
+        </div>
+    </div>
+
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfo-wjbgjNfIVTO5qYpcLIm3uCfpMG_lPa4PdqvQ9LISNt56A/viewform?embedded=true" allowfullscreen id="iframe-rsvp">Loading…</iframe>
 
 </div>
