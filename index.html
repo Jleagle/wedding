@@ -68,6 +68,38 @@
             line-height: 30px;
         }
 
+        /* Gallery */
+        #gallery {
+
+        }
+
+        .img-ticker {
+            display: flex;
+            margin-left: -1rem;
+            margin-right: -1rem;
+            animation: ticker-kf 26s linear infinite;
+            align-items: center;
+        }
+
+        .tickerlogo {
+            width: 15rem; /* 15rem + 2rem = 17rem */
+            flex: none;
+            margin: 0 1rem 0 1rem;
+            /*align-self: flex-start;*/
+            max-width: 100%;
+            height: auto;
+        }
+
+        @keyframes ticker-kf {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-221rem); /* 17rem x 13 photos = 221rem */
+            }
+        }
+
+        /**/
         table#program {
             color: #717275;
             margin: 0 auto;
@@ -123,6 +155,44 @@
         document.getElementById('countdown').innerText = countdown(start, end, countdown.DAYS | countdown.HOURS, 4, 0).toString();
     </script>
 
+</div>
+
+<div style="overflow: hidden; width: 100%;" id="gallery">
+
+    <div class="img-ticker">
+        <img class="tickerlogo" src="pics/gallery/20171009_153010.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/_EJS0175.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/IMG_20170402_132650.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/IMG_20170818_123522.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/MVIMG_20200320_122945.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20220530_112812108.MP.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20220601_110309174.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20221002_120410090.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230703_193452297.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230813_111136783.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230921_080046936.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230921_120440238.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230922_160035787.webp" alt="Gillian & James">
+
+        <img class="tickerlogo" src="pics/gallery/20171009_153010.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/_EJS0175.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/IMG_20170402_132650.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/IMG_20170818_123522.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/MVIMG_20200320_122945.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20220530_112812108.MP.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20220601_110309174.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20221002_120410090.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230703_193452297.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230813_111136783.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230921_080046936.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230921_120440238.webp" alt="Gillian & James">
+        <img class="tickerlogo" src="pics/gallery/PXL_20230922_160035787.webp" alt="Gillian & James">
+    </div>
+
+
+</div>
+
+<div class="container">
     <!---->
     <div class="section-title-wrap">
         <h2 class="section-title"><i class="bi-clock me-1"></i> Program</h2>
