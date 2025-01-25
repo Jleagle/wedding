@@ -144,18 +144,79 @@
 <div class="container">
 
     <h1>Gillian & James's Wedding</h1>
-    <p class="text-center">
-        <span id="countdown"></span> -
-        <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Gillian+%26+James%27s+Wedding&dates=20250816/20250816&details=Details:+https://gillianandjames.info/&location=Burley+Manor,+BH244BS" target="_blank">Add to Calendar</a>
-    </p>
 
-    <script>
-        const start = Date.now();
-        const end = new Date("2025-08-16T14:30:00.000+01:00");
+    <div class="row">
+        <div class="col-12 col-md-6">
 
-        countdown.setLabels(null, null, null, null, '');
-        document.getElementById('countdown').innerText = countdown(start, end, countdown.DAYS | countdown.HOURS, 4, 0).toString();
-    </script>
+            <!---->
+            <div class="section-title-wrap">
+                <h2 class="section-title"><i class="bi bi-calendar-month"></i> Date</h2>
+
+                <div class="section-title-bottom">
+                    <span class="section-title-line"></span>
+                    <i class="section-title-icon bi-heart-fill"></i>
+                    <span class="section-title-line"></span>
+                </div>
+            </div>
+
+            <h3>The 16th of August 2025</h3>
+
+            <p class="text-center">
+                <span id="countdown"></span> -
+                <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Gillian+%26+James%27s+Wedding&dates=20250816/20250816&details=Details:+https://gillianandjames.info/&location=Burley+Manor,+BH244BS" target="_blank">Add to Calendar</a>
+            </p>
+
+            <script>
+                const start = Date.now();
+                const end = new Date("2025-08-16T14:30:00.000+01:00");
+
+                countdown.setLabels(null, null, null, null, '');
+                document.getElementById('countdown').innerText = countdown(start, end, countdown.DAYS | countdown.HOURS, 4, 0).toString();
+            </script>
+
+        </div>
+        <div class="col-12 col-md-6">
+
+            <!---->
+            <div class="section-title-wrap">
+                <h2 class="section-title"><i class="bi-clock me-1"></i> Program</h2>
+
+                <div class="section-title-bottom">
+                    <span class="section-title-line"></span>
+                    <i class="section-title-icon bi-heart-fill"></i>
+                    <span class="section-title-line"></span>
+                </div>
+            </div>
+
+            <table id="program">
+                <tr>
+                    <td>Arrivals</td>
+                    <td>1:30-2:00</td>
+                </tr>
+                <tr>
+                    <td>Ceremony</td>
+                    <td>2:30</td>
+                </tr>
+                <tr>
+                    <td>Drinks Reception</td>
+                    <td>3:00</td>
+                </tr>
+                <tr>
+                    <td>Dinner</td>
+                    <td>4:30</td>
+                </tr>
+                <tr>
+                    <td>Evening Party</td>
+                    <td>8:00</td>
+                </tr>
+                <tr>
+                    <td>Carriages</td>
+                    <td>11:00</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
 
 </div>
 
@@ -191,50 +252,11 @@
         <img class="gallery-photo" src="pics/gallery/PXL_20230921_120440238.webp" alt="Gillian & James">
         <img class="gallery-photo" src="pics/gallery/PXL_20230922_160035787.webp" alt="Gillian & James">
     </div>
-
-
 </div>
 
 <div class="container">
-    <!---->
-    <div class="section-title-wrap">
-        <h2 class="section-title"><i class="bi-clock me-1"></i> Program</h2>
 
-        <div class="section-title-bottom">
-            <span class="section-title-line"></span>
-            <i class="section-title-icon bi-heart-fill"></i>
-            <span class="section-title-line"></span>
-        </div>
-    </div>
-
-    <table id="program">
-        <tr>
-            <td>Arrivals</td>
-            <td>1:30-2:00</td>
-        </tr>
-        <tr>
-            <td>Ceremony</td>
-            <td>2:30</td>
-        </tr>
-        <tr>
-            <td>Drinks Reception</td>
-            <td>3:00</td>
-        </tr>
-        <tr>
-            <td>Dinner</td>
-            <td>4:30</td>
-        </tr>
-        <tr>
-            <td>Evening Party</td>
-            <td>8:00</td>
-        </tr>
-        <tr>
-            <td>Carriages</td>
-            <td>11:00</td>
-        </tr>
-    </table>
-
-    <!---->
+    <!-- Venue -->
     <div class="section-title-wrap">
         <h2 class="section-title"><i class="bi-geo-alt me-1"></i> Venue</h2>
 
